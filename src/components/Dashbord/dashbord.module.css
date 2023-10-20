@@ -1,0 +1,47 @@
+:root {
+    --color: #6EB648
+}
+
+/* Dashbord Styles */
+.dashbord{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dashbord_card {
+    width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashbord_title {
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 1.2;
+    color: #ffffffad;
+}
+
+.dashbord_number {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+}
+
+
+.link {
+    text-decoration: none;
+}

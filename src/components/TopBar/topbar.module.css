@@ -1,0 +1,17 @@
+.topbar_wrapper {
+    width: 100%;
+    margin: auto 0;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    border-bottom: 1px solid #6EB648;
+    background-color: #F9FAFC;
+}
+
+.img {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}

@@ -1,0 +1,41 @@
+:root {
+    --color: #6EB648
+}
+
+.products_container {
+    padding: 10px 10px 10px 10px;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 px 10px 10px 10px;
+}
+.footerContent {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+}
+
+.tabsContent {
+    margin-top: 10px;
+}
+
+.inputWrapper{
+    margin-top: 20px;
+}
+
+.inputWrapperC{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sizeInputBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

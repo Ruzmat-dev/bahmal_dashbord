@@ -1,0 +1,19 @@
+.statisric {
+    padding: 50px;
+}
+.headerForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 50px;
+}
+.btnWrapp {
+    
+    display: flex;
+    justify-content: center;
+}
+.send {
+    margin-top: 20px;
+}

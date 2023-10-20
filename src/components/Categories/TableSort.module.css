@@ -1,0 +1,50 @@
+.th {
+  width: 100%;
+  padding: 0;
+}
+
+.control {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+}
+
+.control:hover {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+}
+
+.icon {
+  width: rem(21px);
+  height: rem(21px);
+  border-radius: rem(21px);
+}
+
+.catalog {
+  padding: 50px;
+}
+
+.wrapperNotFount {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-self: center;
+  position: relative;
+}
+
+.iconNotFount {
+  margin-left: 180%;
+}
+
+.wrppaerInputAndBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addNewCategory {
+  display: flex;
+  justify-content: space-between;
+}
+
+._th_11ryp_1>button>p {
+  align-items: center;
+}

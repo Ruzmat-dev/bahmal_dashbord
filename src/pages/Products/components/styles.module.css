@@ -1,0 +1,64 @@
+.container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.itemContainer {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 10px;
+    width: 150px;    
+    height: 150px;
+    border: 1px solid #d3d3d3;
+}
+
+.itemContainerD {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 10px;
+  width: 150px;    
+  height: 150px;
+}
+
+.imagecontainer {
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+
+
+  .removebutton {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;    
+    right: 0px;
+    background-color: #fff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+  
+  .imagecontainer:hover .removebutton {
+    display: flex;
+  }
