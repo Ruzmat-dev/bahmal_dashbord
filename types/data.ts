@@ -140,3 +140,13 @@ export interface SubCategory {
   title: string;
   category: Category;
 }
+export interface SubCategory {
+  id: number;
+  title: string;
+  category: Category;
+}
+export interface getSubCategoryById {
+  id: number
+  title: string
+  category: number
+}

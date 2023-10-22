@@ -7,6 +7,7 @@ import {
   TCategory,
   TGalleries,
   TStatistics,
+  getSubCategoryById,
 } from "../../types/data";
 import { Response } from "../../types/v2data";
 import { axiosPublic } from "./axiosPublic";
@@ -136,6 +137,15 @@ export const getProductsData = async (value: string) => {
 export const getSubcategories = async(lang: "uz" | "ru" | "en") => {
   try {
     const res = await axiosPublic(lang).get<SubCategory[]>(`/subcategories/`);
+    return res
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const getSubcategoriesById = async(id:string , lang: "uz" | "ru" | "en") => {
+  try {
+    const res = await axiosPublic(lang).get<getSubCategoryById>(`/subcategories/${id}`);
     return res
   } catch (error) {
     console.log(error)
