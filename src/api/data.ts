@@ -133,6 +133,15 @@ export const getProductsData = async (value: string) => {
   }
 };
 
+export const getProductById = async (id:string , lang: "uz" | "ru" | "en") => {
+  try {
+    const res = await axiosPublic(lang).get<Response>(`/products/${id}`);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 
 export const getSubcategories = async(lang: "uz" | "ru" | "en") => {
   try {

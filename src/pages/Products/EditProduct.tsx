@@ -22,9 +22,9 @@ const EditProduct = () => {
   const [value, setValue] = useLocalStorage<TProductType>({ key: 'ptype', defaultValue: 'RMP' });
   const navigate = useNavigate();
   const { id } = useParams()
-  const [subs, setSubs] = useState<{value: string, label: string}[]>([])  
-  
-  const fetchSubcategories = useCallback(async() => {
+  const [subs, setSubs] = useState<{ value: string, label: string }[]>([])
+
+  const fetchSubcategories = useCallback(async () => {
     try {
       const res_uz = await getSubcategories("uz")
       const arr = res_uz?.data.map((item) => {
@@ -40,7 +40,7 @@ const EditProduct = () => {
   }, [])
 
 
-  const fetchData = useCallback(async() => {
+  const fetchData = useCallback(async () => {
     try {
       const res_uz = await axiosPublic("uz").get<Result>(`/products/${id}/`);
       const res_ru = await axiosPublic("ru").get<Result>(`/products/${id}/`);
@@ -72,7 +72,7 @@ const EditProduct = () => {
         <Tabs defaultValue={value} value={value} onChange={(e: TProductType) => setValue(e)}>
           <Tabs.List>
             <Tabs.Tab value="RMP" >
-             Xomashyo mahsulot
+              Xomashyo mahsulot
             </Tabs.Tab>
             <Tabs.Tab value="FFP">
               Tayyor mato
@@ -95,7 +95,7 @@ const EditProduct = () => {
           </Tabs.Panel>
 
           <Tabs.Panel value="FFP">
-            <Two subs={subs} en_data={dataEn} ru_data={dataRu} uz_data={dataUz}  />
+            <Two subs={subs} en_data={dataEn} ru_data={dataRu} uz_data={dataUz} />
           </Tabs.Panel>
 
           <Tabs.Panel value="FP">

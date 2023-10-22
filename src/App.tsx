@@ -20,6 +20,7 @@ import Products from './pages/Products'
 import AddProduct from './pages/Products/AddProduct'
 import EditProduct from './pages/Products/EditProduct'
 import Statistics from './pages/Statistics'
+import SeeProduct from './components/Products/ProductSee'
 
 
 
@@ -57,6 +58,7 @@ const App = () => {
             <Route path={"/products"} element={<Layout login={login}><Products/></Layout>} />
             <Route path={"/products/add"} element={<Layout login={login}><AddProduct/></Layout>} />
             <Route path={"/products/edit/:id"} element={<Layout login={login}><EditProduct/></Layout>} />
+            <Route path={"/products/see/:id"} element={<Layout login={login}><SeeProduct/></Layout>} />
           </Routes>
         </BrowserRouter>
     </div>
