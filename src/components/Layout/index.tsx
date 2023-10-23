@@ -12,13 +12,13 @@ const Layout = ({ children, login }: Props) => {
   if (!login) return <Navigate to="/" />
 
   return (
-    <div  style={{display: "flex" , justifyContent: "space-between" , flexDirection: "column"}}>
+    <div style={{display: "flex" , justifyContent: "space-between" , flexDirection: "column"}}>
       <div><TopBar/></div>
       <div className='wrapper_topbar_children'>
-        <div>
+        <div style={{ height: "100vh" }}>
           <NavbarNested />
         </div>
-        <div style={{width :"100%"}}>
+        <div style={{width :"100%", height: "100vh", overflow: "auto"}}>
           {children}
         </div>
       </div>
