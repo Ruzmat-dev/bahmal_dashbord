@@ -23,7 +23,7 @@ axios.interceptors.response.use(
   async (error) => {
     const config = error?.config;
 
-    if (error?.response?.status === 401 && !config?.sent) {
+    if ((error?.response?.status === 401 || error?.response?.status === 403) && !config?.sent) {
       config.sent = true;
 
       const result = await memoizedRefreshToken();

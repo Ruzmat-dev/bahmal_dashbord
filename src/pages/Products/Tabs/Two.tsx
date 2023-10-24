@@ -441,7 +441,7 @@ const Two = ({ subs }: Props) => {
         </div>
 
        <div className={styles.inputWrapper}>
-          <Button loading={loading} disabled={loading} type="submit"> <Title size={14}> KEYINGI </Title> </Button>
+          <Button loading={loading} disabled={loading} type="submit"> <Title size={14}> SAQLASH </Title> </Button>
        </div>
     </form>
   )

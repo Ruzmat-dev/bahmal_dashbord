@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core';
+import { Image, Text } from '@mantine/core';
 import { modals } from '@mantine/modals';
 import { AxiosError } from 'axios';
 import { useEffect, useRef, useState } from 'react';
@@ -91,7 +91,8 @@ export default function GalleriesTable() {
                             type="file"
                             id="picture"
                         />
-                            <img
+                            <Image
+                                loading='lazy'
                                 src={imageUrl ? imageUrl : e.image}
                                 alt="Preview"
                             />

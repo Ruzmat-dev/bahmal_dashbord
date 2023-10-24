@@ -1,24 +1,24 @@
-import {  useEffect, useState } from 'react';
 import {
+  Button,
   Table,
-  UnstyledButton,
   Text,
   TextInput,
-  rem,
-  Button
+  UnstyledButton,
+  rem
 } from '@mantine/core';
-import { IconSearch } from '@tabler/icons-react';
-import classes from './TableSort.module.css';
-import MaterialSymbolsDeleteOutlineRounded from '../icons/MaterialSymbolsDeleteOutlineRounded';
-import { getCategories } from '../../api/data';
-import { TCategory } from '../../../types/data';
-import MaterialSymbolsVisibilityOutlineRounded from '../icons/MaterialSymbolsVisibilityOutlineRounded';
-import { Link } from 'react-router-dom';
 import { modals } from '@mantine/modals';
-import { axiosPrivate } from '../../api/axiosPrivate';
+import { IconSearch } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
+import { TCategory } from '../../../types/data';
+import { axiosPrivate } from '../../api/axiosPrivate';
+import { getCategories } from '../../api/data';
 import MaterialSymbolsAddRounded from '../icons/MaterialSymbolsAddRounded';
+import MaterialSymbolsDeleteOutlineRounded from '../icons/MaterialSymbolsDeleteOutlineRounded';
 import MaterialSymbolsEditOutlineRounded from '../icons/MaterialSymbolsEditOutlineRounded';
+import MaterialSymbolsVisibilityOutlineRounded from '../icons/MaterialSymbolsVisibilityOutlineRounded';
+import classes from './TableSort.module.css';
 interface ThProps {
   children: React.ReactNode;
 }
@@ -113,6 +113,7 @@ export function TableSort() {
             type='text'
             mb="md"
             w={600}
+            disabled
             leftSection={<IconSearch style={{ width: rem(16), height: rem(16) }} stroke={1.5} />}
           />
           <Link to="/newCategories">
